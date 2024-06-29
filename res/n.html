@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Why you not sleep?</title>
+</head>
+<body>
+    <div class="text">
+        <div class="text2">
+            Hello, why aren't you sleeping?
+            Why are you here? Well, since you are already here, then none of this matters.
+            I just wanted to say that I value you and love you very much, although we have only been communicating for a month :))
+            This site was created simply because I can, to cheer you up and to creatively give you my number.
+            That's all for now.
+            :)
+        </div>
+        <div class="buttons">
+            <button class="styled-button"><a href="n_2.html">Click :3</a></button>
+            <button class="styled-button"><a href="n_3.html">Click :3</a></button>
+        </div>
+        <div class="footer-links">
+            <a href="https://t.me/cheeseman92" class="link-icon">
+                <img src="icons/telegram.png" alt="tg">
+            </a>
+            <a href="https://github.com/HiTToP22" class="link-icon">
+                <img src="icons/github.png" alt="gh">
+            </a>
+        </div>
+    </div>
+    <script>
+        // Disable zoom on desktop
+document.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+// Disable zoom on keydown
+document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey && (e.key === '+' || e.key === '-' || e.key === '0')) || (e.key === 'Meta' && (e.key === '+' || e.key === '-' || e.key === '0'))) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+// Disable double tap zoom on touch devices
+document.addEventListener('touchstart', function(e) {
+    if (e.touches.length > 1) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+// Disable pinch to zoom on touch devices
+document.addEventListener('gesturestart', function(e) {
+    e.preventDefault();
+}, { passive: false });
+    </script>
+</body>
+</html>

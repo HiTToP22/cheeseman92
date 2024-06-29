@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_2.css">
+    <title>ILU</title>
+</head>
+<body>
+    <div class="coming-soon">
+        <h1>Soon</h1>
+        <div class="loading-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+            // Disable zoom on desktop
+    document.addEventListener('wheel', function(e) {
+        if (e.ctrlKey) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // Disable zoom on keydown
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey && (e.key === '+' || e.key === '-' || e.key === '0')) || (e.key === 'Meta' && (e.key === '+' || e.key === '-' || e.key === '0'))) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // Disable double tap zoom on touch devices
+    document.addEventListener('touchstart', function(e) {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // Disable pinch to zoom on touch devices
+    document.addEventListener('gesturestart', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+    </script>
+</body>
+</html>
